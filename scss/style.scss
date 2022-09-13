@@ -1,0 +1,32 @@
+@import "./mixins.scss";
+@import "./constans.scss";
+@import "./reset.scss";
+
+header {
+    background: $DefaultBgColor;
+    color: $DefaultFontColor;
+    padding: {
+        top: 20px;
+        bottom: 20px;
+    };
+ 
+    .container {
+       @extend %BlockConfig;
+        
+        .project{
+           @include flexBlocks(100%, space-between);
+
+            &_logo{
+                width: 20%;
+            }
+
+            &_navbar{
+               @include flexBlocks(60%, space-between);
+
+                li a{
+                 @include hoverColorConfig($DefaultFontColor, $DefaultFontHoverColor)
+                }
+            }
+        }  
+    }
+}

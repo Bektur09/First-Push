@@ -1,0 +1,47 @@
+header .container {
+  width: 87%;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: #437;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+header .container .project {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+header .container .project_logo {
+  width: 20%;
+}
+header .container .project_navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+header .container .project_navbar li a {
+  transition: 0.3s all linear;
+  color: white;
+}
+header .container .project_navbar li a:hover {
+  color: tomato;
+}
+
+/*# sourceMappingURL=style.css.map */

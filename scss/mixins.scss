@@ -1,0 +1,14 @@
+@mixin flexBlocks($widthValue, $justifyValue) {
+    display: flex;
+    justify-content: $justifyValue;
+    width: $widthValue;
+}
+
+@mixin hoverColorConfig($initial, $hoverred) {
+    transition: 0.3s all linear;
+    color: $initial;
+
+    &:hover {
+        color: $hoverred;
+    }
+}
